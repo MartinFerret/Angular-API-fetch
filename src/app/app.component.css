@@ -1,3 +1,8 @@
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
