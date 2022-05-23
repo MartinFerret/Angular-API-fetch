@@ -6,13 +6,14 @@ import { PostService } from './services/post.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent implements OnInit {
   posts: any;
   getClick() {
     var buttons = document.querySelectorAll('button.eliminar');
     for (let i = 0; i < buttons.length; i++) {
       buttons[i]?.addEventListener('click', function handleClick() {
-        buttons[i].closest('.card')?.classList.add('hide');
+        buttons[i].closest('.container__card')?.classList.add('hide');
       })
     }
   }
