@@ -1,0 +1,15 @@
+<div class="title">
+    <h1>Fetch-Api</h1>
+  </div>
+  
+  
+  <div class="container">
+    <div class="container__card"  *ngFor="let post of posts.data.memes">
+        <h5 class="card__title">{{ post.name }}</h5>
+        <img class="img" src="{{ post.url }}" alt="{{ post.name }}" />
+        <div class="button">
+          <button (click)="getClick()" class="eliminar" >Eliminar</button>
+          <button class="descargar"><a href="{{ post.url }}" download="{{ post.url }}">Descargar</a></button>
+        </div>
+    </div>
+  </div>
